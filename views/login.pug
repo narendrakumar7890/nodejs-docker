@@ -1,0 +1,63 @@
+doctype html
+html(lang="en")
+  head 
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0")
+    title Dockerized CRUD Node.js Web App
+    link(rel="stylesheet" href="/css/style.css")   
+    script(src='/js/main.js')  
+
+  body
+    style.
+      body {
+        background-image: url('https://img5.goodfon.com/wallpaper/nbig/4/36/mmmmm-nnnnnn-bbbbbb-vvvvv-cccccccc-1.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+
+    .container
+      // Data or Content
+      .box-1
+        .content-holder
+          h2 Hello!
+          p This is a sample Dockerized CRUD Rest API Node.js Web app  
+          button.button-1(onclick='signup()') Sign up
+          button.button-2(onclick='login()') Login
+      // Forms
+      .box-2
+        .login-form-container
+          form(action="http://localhost:3000/login", method="post")
+            h1 Login Form
+            input.input-field(type='text' placeholder='Username' name="username")
+            br
+            br
+            input.input-field(type='text' placeholder='Password' name="password")
+            br
+            br
+            button.login-button(type='submit') Login
+            br
+            br
+            p #{message} 
+        // Create Container for Signup form
+        .signup-form-container
+          form(action="http://localhost:3000/register", method="post")
+            h1 Sign Up Form
+            input.input-field(type='text' placeholder='username' name="username")
+            br
+            br
+            input.input-field(type='text' placeholder='email' name="email")
+            br
+            br
+            input.input-field(type='text' placeholder='password' name="password")
+            br
+            br
+            button.signup-button(type='submit') Sign Up
+
+
+
+
+
+
+  

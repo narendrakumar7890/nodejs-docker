@@ -1,0 +1,33 @@
+{
+  "name": "node-js-docker",
+  "version": "1.0.0",
+  "description": "Node js with Docker - This is a sample Rest CRUD API project using Node.js, Express, Pug,  MongoDb for database and Mocha & Chai for testing",
+  "main": " server.js",
+  "scripts": {
+    "test": "mocha --timeout 20000",
+    "start": "nodemon server.js"
+  },
+  "author": "Narendra Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "chai-http": "^4.3.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "express-validator": "^6.13.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^4.1.4",
+    "mongoose": "^6.0.12",
+    "mongoose-unique-validator": "^3.0.0",
+    "nodemon": "^2.0.14",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "pug": "^3.0.2",
+    "q": "^1.5.1",
+    "save": "^2.4.0",
+    "sleep": "^6.3.0",
+    "swagger-jsdoc": "^6.1.0",
+    "swagger-ui-express": "^4.1.6"
+  }
+}
